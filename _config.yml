@@ -3,16 +3,13 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+first_name: Ahmed
+middle_name: 
+last_name: El-Gazzar
+email: ahmed.elgazzar@donders.ru.nl # your email address
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+footer_text: 
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -103,8 +100,6 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -123,8 +118,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Latent Rhythms # blog_name will be displayed in your blog page
+blog_description: State inference via writing down thoughts
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -151,15 +146,9 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: latents # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-# External sources.
-# If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -203,7 +192,11 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include:
+  - "_pages/about.md"
+  - "_pages/blog.md"
+  - "_pages/projects.md"
+  - "_pages/publications.md"
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -279,7 +272,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
+display_tags: ["dynamical systems", "stochastic processes", "generative modeling",] # these tags will be displayed on the front page of your blog
 display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
@@ -287,8 +280,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [ElGazzar]
+  first_name: [Ahmed]
 
   style: apa
   locale: en
